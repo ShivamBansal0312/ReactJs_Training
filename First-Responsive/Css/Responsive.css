@@ -1,0 +1,186 @@
+#page{
+    font-family: Calibri;
+}
+::selection{
+    color: brown;
+}
+
+/* Navbar Css Start */
+.navbar-brand{
+    padding-left: 30px;
+    font-size: 44px;
+}
+.navbar-nav{
+    font-size: 16px;
+    padding-right: 10px;
+}
+/* Navbar Css End */
+
+/* Navigation Menu Css Start */
+.collapse .navbar-nav .nav-link{
+    padding: 20px;
+}
+.collapse .navbar-nav{
+    padding-left: 15px;
+}
+nav a span:hover{
+    text-decoration: underline;
+}
+nav .navbar-nav li a{
+    color: white !important;
+}
+nav a span{
+    color: black !important;
+}
+.form-inline{
+    padding-right: 30px;
+}
+nav .nav-link{
+    padding: 20px 0px 20px 30px;
+}
+/* Navigation Menu Css End */
+
+/* Block Css Start */
+.container-fluid{
+    background: #eee;
+}
+.container-fluid .row #pic{
+    padding-left: 80px;
+}
+.container-fluid .row #heading{
+    padding-left: 20px;
+    font-size: 58px;
+    text-transform: uppercase;
+}
+.container-fluid .row .col ul li{
+    padding: 10px 0px 10px 0px;
+}
+.container-fluid .row .col ul{
+    list-style: none;
+    padding: 20px 0px 20px 50px;
+    font-size: 18px;
+    color: #333;
+}
+/* Block Css End */
+
+/* Deals Section Css Start */
+#offers{
+    width: 100%;
+    margin: 0px auto;
+}
+.container h1{
+    padding: 20px 0px 0px 50px;
+    font-size: 1.5em;
+}
+.container h1::first-letter{
+    font-weight: bold;
+    font-size: 2em;
+}
+#offers .row .col-sm-4> ul{
+    width: 100%;
+    list-style: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+}
+#offers .row .col-sm-4> ul li{
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+}
+#offers .row .col-sm-4> ul li p{
+    border-right: 2px solid #eee;
+    padding-bottom: 20px;
+}
+#offers .row .col-sm-4> ul li p span{
+    font-size: 2em;
+    padding-left: 12px;
+    background: linear-gradient(to right, red 0%, rgb(64, 64, 235) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#offers .row .col-sm-4> ul li p i{
+    position: absolute;
+    margin-top: 7px;
+}
+#offers .row .col-sm-4> ul li p.remove{
+    border-right: 0px !important;
+}
+#offers .row .col-sm-4> ul li p + span{
+    font-size: 16px;
+}
+/* Deals Section Css End */
+
+/* Fashion Section Css Start */
+#fashion-category{
+    width: 80%;
+    margin: 0px auto;
+}
+#fashion-category h1{
+    font-size: 1.5em;
+}
+#fashion-category h1::first-letter{
+    font-weight: bold;
+    font-size: 2em;
+}
+.col-lg-3{
+    padding: 15px 15px 15px 15px;
+}
+.card{
+    width:160px;
+    height: 205px;
+    background-color: #dbf3fa;
+    padding: 1.5px 1.5px 1.5px 1.5px;
+}
+.card-title{
+    text-align: center;
+    padding-top: 5px;
+    font-size: 20px;
+}
+/* Deals Section Css End */
+
+/* Products Section Css Start */
+#product{
+    width: 80%;
+    margin: 0px auto;
+}
+#product ul{
+    padding: 5px 0px 5px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#product ul li{
+    list-style: none;
+    padding: 0px 10px 0px 10px;
+    border-right: 1px solid #333;
+    margin: 5px 0px 5px 0px;
+    cursor: pointer;
+    font-size: 14px;
+}
+#product ul li:last-child{
+    border-right:0px solid #333;
+}
+/* Products Section Css End */
+
+/* Footer Section Css Start */
+footer{
+    width: 100%;
+    background: #131a22;
+    padding-top: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.col-md-3{
+    color: white;
+    padding-left: 90px;
+}
+.col-md-3 ul li{
+    font-size: 16px;
+    list-style: none;
+    padding: 5px 0px 5px 0px;
+}
+.col-md-3 ul{
+    padding: 10px 0px 10px 0px;
+}
+/* Footer Section Css End */
