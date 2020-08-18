@@ -1,0 +1,238 @@
+#page{
+    width: 100%;
+    font-family: Calibri, sans-serif;
+}
+::selection{
+    color: brown;
+}
+
+/* Header Section Css Start */
+header{
+    display: block;
+    width: 100%;
+    height: 70px;
+    background: #333333;
+}
+header #header{
+    margin: 0px auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+header #header .logo{
+    font-size: 48px;
+    color: #fff;
+}
+header #header ul{ 
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+header #header ul li{
+    padding: 0px 0px 0px 20px;
+    cursor: pointer;
+}
+/* Header Section Css End */
+
+/* Menu Section Css Start */
+#menu{
+    width: 80%;
+    margin: 0px auto;
+    height: 60px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+#menu ul{
+    display: flex;
+    font-size: 16px;
+}
+#menu ul li{
+    flex-direction: row;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#menu ul li:hover{
+    text-decoration: underline;
+}
+#menu #search input{
+    border: 1.5px solid #333;
+    width: 200px;
+    height: 40px;
+    color: #333;
+    padding: 5px;
+    box-sizing: border-box;
+}
+/* Menu Section Css End */
+
+/* Slide Box Section Css Start */
+#slide-box{
+    height: 350px;
+    background: #eee;
+}
+#slide-box .slide{
+    width:  80%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 350px;
+}
+#slide-box .slide .heading{
+    width: 60%;
+    font-size: 58px;
+    background: url('../Image/mask.png') no-repeat;
+    box-sizing: border-box;
+    padding: 30px 0px 0px 250px;
+    height: 179px;
+    text-transform: uppercase;
+}
+#slide-box .slide .content{
+    width: 40%;
+    font-size: 18px;
+    color: #333;
+}
+#slide-box .slide .content li{
+    padding: 10px 0px 10px 0px;
+}
+/* Slide Box Section Css End */
+
+/* Deals Section Css Start */
+#deals{
+    width: 80%;
+    margin: 0px auto;
+}
+#deals h1{
+    padding-top: 20px;
+    font-size: 1.5em;
+}
+#deals h1::first-letter{
+    font-weight: bold;
+    font-size: 2em;
+}
+#deals ul{
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+}
+#deals ul li{
+    width: 33.3%;
+    padding: 20px 0px 20px 0px;
+}
+#deals ul li p{
+    border-right: 2px solid #eee;
+    padding-bottom: 20px;
+}
+#deals ul li p span{
+    font-size: 2em;
+    padding-left: 12px;
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#deals ul li p i{
+    position: absolute;
+    margin-top: 7px;
+}
+#deals ul li p.remove{
+    border-right: 0px !important;
+}
+#deals ul li p + span{
+    font-size: 16px;
+}
+/* Deals Section Css End */
+
+/* Fashion Section Css Start */
+#fashion{
+    width: 80%;
+    margin: 0px auto;
+}
+#fashion #fashion-category h1{
+    padding-top: 20px;
+    font-size: 1.5em;
+}
+#fashion-category h1::first-letter{
+    font-weight: bold;
+    font-size: 2em;
+}
+#fashion-category ul{
+    padding: 20px 0px 40px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#fashion-category ul:last-child{
+    margin-top: 0px;
+}
+#fashion-category ul li{
+    width: 160px;
+    height: 205px;
+    background: #dbf3fa;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 18px;
+}
+/* Fashion Section Css End */
+
+/* Product Section Css Start */
+#product{
+    width: 80%;
+    margin: 0px auto;
+}
+#product ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#product ul li{
+    padding: 0px 10px 0px 10px;
+    border-right: 1px solid #333;
+    margin: 5px 0px 5px 0px;
+    cursor: pointer;
+    font-size: 14px;
+}
+#product ul li:last-child{
+    border-right:0px solid #333;
+}
+/* Product Section Css End */
+
+/* Footer Section Css Start */
+footer{
+    display: block;
+    background: #131a22;
+    height: 300px;
+    margin-top: 35px;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+footer #footer{
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+}
+footer #footer section{
+    width: 25%;
+    color: #fff;
+}
+footer #footer section h2{
+    font-size: 1.3em;
+}
+footer #footer section ul{
+    padding: 15px 0px 15px 0px;
+}
+footer #footer section li{
+    font-size: 16px;
+    padding: 5px 0px 5px 0px;
+}
+/* Footer Section Css End */
