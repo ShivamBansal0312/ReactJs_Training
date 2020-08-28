@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="innersection">
+            <div class="gridmain"></div>
+            <div class="tablelist">
+                <table class="table-class" cellpadding="0" cellspacing="0"></table>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    function deletevalue(elm)
+    {  
+        var query = "#"+elm.parentNode.id
+        if(!elm.parentNode.id.includes('inner'))
+        {
+             query = "#row-"+elm.parentNode.id
+        }
+        var innergrid = document.querySelector(query);
+        innergrid.innerHTML= '';
+       
+    }  
+    function edit(elm)
+    {  
+        
+        var skillsGrid = document.querySelector('#skillsGrid-'+elm.parentNode.id);
+        elm.parentNode.innerHTML= '<a id="edit" onclick="save(this)" href="#">Save</a>';
+        skillsGrid.innerHTML= '<input type="text" id="skillname"></input>';
+
+    } 
+    function editList(elm)
+    {  
+        
+        var skillsList = document.querySelector('#skillslist-'+elm.parentNode.id);
+        elm.parentNode.innerHTML= '<img  onclick="saveList(this)"  src="images/save.png" ><img onclick="deletevalue(this)" src="images/cross.svg">';
+        skillsList.innerHTML= '<input type="text" id="skillnamelist"></input>';
+
+    } 
+    function save(elm)
+    {  
+        var skillsGrid = document.querySelector('#skillsGrid-'+elm.parentNode.id); 
+        elm.parentNode.innerHTML= '<a id="edit" onclick="edit(this)" href="#">Edit</a>';
+        skillsGrid.innerHTML= 'Skills:'+document.getElementById("skillname").value;
+    } 
+    function saveList(elm)
+    {  
+        var skillsGrid = document.querySelector('#skillslist-'+elm.parentNode.id); 
+        elm.parentNode.innerHTML= '<img  onclick="editList(this)"  src="images/edit.svg" ><img onclick="deletevalue(this)" src="images/cross.svg">';
+        skillsGrid.innerHTML= document.getElementById("skillnamelist").value;
+    } 
+         
+</script>
