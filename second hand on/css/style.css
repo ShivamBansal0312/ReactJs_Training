@@ -85,12 +85,21 @@ body {
     color: #5783b7;
 }
 
+#display{
+    color: white;
+    font-size: 35px;
+    margin-top: 15px;
+    margin-left:95%;
+    text-decoration: none;
+}
+
 #displayText{
     text-decoration: none;
     color: #fff;
     font-size: 35px;
     margin-left:95%;
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 a:hover{
     cursor: pointer;
