@@ -15,8 +15,9 @@
 
     <div class="main">
         <div class="innersection">
-            <div class="gridmain"></div>
-            <a id="displayText" class="fas fa-bars" href="javascript:toggle();"></a>
+            <a id="display" class="fa fa-th-large" href="javascript:toggle1();"></a>
+            <div class="gridmain" id="toggle" style="display: block"></div>
+            <a id="displayText" class="fa fa-th-list" href="javascript:toggle();"></a>
             <div class="tablelist" id="toggleText" style="display: none">
                 <table class="table-class" cellpadding="0" cellspacing="0"></table>
             </div>
@@ -32,6 +33,19 @@
     function toggle() {
         var ele = document.getElementById("toggleText");
         var text = document.getElementById("displayText");
+        if(ele.style.display == "block") {
+            ele.style.display = "none";
+            text.innerHTML = "";
+        }
+        else {
+            ele.style.display = "block";
+            text.innerHTML = "";
+        }
+    }
+    
+    function toggle1() {
+        var ele = document.getElementById("toggle");
+        var text = document.getElementById("display");
         if(ele.style.display == "block") {
             ele.style.display = "none";
             text.innerHTML = "";
